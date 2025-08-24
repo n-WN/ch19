@@ -1,0 +1,14 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Backup git data
+.git-backups/
+
+# Editors
+.vscode/
+.idea/
+
+# MacOS
+.DS_Store
