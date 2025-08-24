@@ -1,0 +1,34 @@
+[project]
+name = "coppersmith"
+version = "0.1.0"
+description = "Educational implementation of Coppersmith's small root methods (univariate + bivariate + elimination)"
+authors = [
+  {name = "Agent Mode", email = "agent@example.com"}
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.pytest.ini_options]
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
+# 详细输出：逐测试详情、打印、失败摘要、耗时前10
+addopts = "-vv -s -rA --durations=10"
+# 让 pytest 能找到本地包
+pythonpath = ["."]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "PERF"]
+ignore = []
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+force-single-line = false
+
