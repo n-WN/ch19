@@ -12,13 +12,15 @@ Notes:
 - All APIs intentionally use standard library types and explicit integer arithmetic.
 """
 
+from . import bivar, bivariate, elimination, lll, poly, univariate
+
 __all__ = [
-    "poly",
-    "lll",
-    "univariate",
     "bivar",
     "bivariate",
     "elimination",
+    "lll",
+    "poly",
+    "univariate",
 ]
 
 __version__ = "0.1.0"
